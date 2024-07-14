@@ -1,0 +1,320 @@
+﻿/* =============
+   Header
+   ============= */
+
+header {
+    background-image: url('../images/bamboo sushi mat background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #53525285;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4.5rem;
+    z-index: 1000;
+}
+
+#engl {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#engl:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#logo {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+
+/* =============
+   Navigation
+   ============= */
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.5rem;
+    margin: 0;
+    /*padding: 0;*/
+    background-color: black;
+    border-bottom: 0.32rem solid #ff4d4d;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    padding: 0.2rem;
+}
+
+nav a:hover {
+    color: red;
+}
+
+#kontaktseite nav a.kontaktseite, #contact nav a.contact,
+#kundenrezensionen nav a.kundenrezensionen,
+#reviews nav a.reviews,
+#serviceDE nav a.serviceDE,
+#serviceEN nav a.serviceEN,
+#galerie_seite nav a.galerie_seite,
+#gallery_pages nav a.gallery_pages,
+#menü nav a.menü,
+#menu nav a.menu
+{
+    color: red;
+    text-decoration: underline;
+}
+
+#checkbtn {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    padding: 0 0.8rem 0 0.8rem;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#check {
+    display: none;
+}
+
+
+/* =============
+   Footer
+   ============= */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.06rem;
+    width: 100%;
+    height: 17rem;
+    background-color: black;
+    color: white;
+    border-top: 0.45rem solid #ff4d4d;
+    margin-top: 4.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+
+#footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8em;
+    letter-spacing: 0.08rem;
+    flex-grow: 1;
+}
+
+#footer1 p {
+    width: 26%;
+    font-size: 1.1em;
+}
+
+#footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1rem;
+    width: 100%;
+    border-top: 0.15rem solid #1a1a1a;
+}
+
+#footer2 p {
+    width: 11%;
+}
+
+/* ================
+   Back2Top-Button
+   ================ */
+
+#back2top {
+    display: none;
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 48%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#back2top:hover {
+    background-color: gray;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==============
+   Media Queries
+   ============== */
+
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 5.5%;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    #footer2 p {
+        width: 16%;
+    }
+}
+
+@media (max-width: 992px) {
+    #back2top {
+        width: 3.4rem;
+        height: 3.4rem;
+        bottom: 60px;
+        right: 15px;
+    }
+    #checkbtn {
+        display: block;
+    }
+    #checkbtn:hover, #checkbtn:active {
+    background-color: #1a1a1a;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 2rem 0  2rem 0;
+        line-height: 4.5rem;
+        background-color: black;
+        transition: 0.4s ease;
+        border-bottom: 0.32rem solid #ff4d4d;
+        border-top: 0.32rem solid #ff4d4d;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #kontaktseite nav a.kontaktseite, #contact nav a.contact,
+    #kundenrezensionen nav a.kundenrezensionen,
+    #reviews nav a.reviews,
+    #serviceDE nav a.serviceDE,
+    #serviceEN nav a.serviceEN,
+    #galerie_seite nav a.galerie_seite,
+    #gallery_pages nav a.gallery_pages,
+    #menü nav a.menü,
+    #menu nav a.menu 
+    {
+        text-decoration: none;
+    }
+    #kontaktseite nav a.kontaktseite::before, #contact nav a.contact::before,
+    #kundenrezensionen nav a.kundenrezensionen::before,
+    #reviews nav a.reviews::before,
+    #serviceDE nav a.serviceDE::before,
+    #serviceEN nav a.serviceEN::before,
+    #galerie_seite nav a.galerie_seite::before,
+    #gallery_pages nav a.gallery_pages::before,
+    #menü nav a.menü::before,
+    #menu nav a.menu::before
+    {
+        content: "❯";
+        margin-right: 0.45rem;
+    }
+    #kontaktseite nav a.kontaktseite::after, #contact nav a.contact::after,
+    #kundenrezensionen nav a.kundenrezensionen::after,
+    #reviews nav a.reviews::after,
+    #serviceDE nav a.serviceDE::after,
+    #serviceEN nav a.serviceEN::after,
+    #galerie_seite nav a.galerie_seite::after,
+    #gallery_pages nav a.gallery_pages::after,
+    #menü nav a.menü::after,
+    #menu nav a.menu::after,
+    #über_uns nav a.über_uns::after,
+    #about_us nav a.about_us::after
+    {
+        content: "❮";
+        margin-left: 0.45rem;
+    }
+    #footer2 p {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer1 p {
+        width: 30%;
+        font-size: 1em;
+    }
+    #footer2 p {
+        width: 24%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        font-size: 1.4rem;
+    }
+    footer {
+        height: 36rem;
+    }
+    #footer1 {
+        flex-direction: column;
+        grid-gap: 2%;
+    }
+    #footer1 p {
+        width: 70%;
+    }
+    #footer2 p {
+        width: 30%;
+    }
+}

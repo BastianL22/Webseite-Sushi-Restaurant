@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Speisekarte</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/StyleSheet_Header_Footer.css">
+    <link rel="stylesheet" media="screen" href="Stylesheets/StyleSheet_Speisekarte.css">
+    <script defer src="javascript/Script_Back2TopBtn.js"></script>
+</head>
+
+<body id="menu">
+    <!--Back to Top Button-->
+    <button id="back2top" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24"><g fill='#FFFFFF'><path d="M5.5 12.7c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8 0 2.1 1.1 2.1zM5.5 20.7c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8 0 2.1 1.1 2.1z"></path></g></svg>
+    </button>
+
+    <header>
+        <a href="Speisekarte_e.html">
+            <img id="engl" src="Images/us_uk_flag.svg" width="90" height="40" title="Englisch-Button">
+        </a>
+        <div>
+            <a href="index.html">
+                <img id="logo" src="Images/Logo.png" width="160" height="160" title="Logo">
+            </a>
+        </div>
+        <nav>
+            <input type="checkbox" id="check" name="check">
+            <label for="check" id="checkbtn">&#9776;</label>
+            <ul>
+                <li><a id="home" title="Home" href="index.html">HOME</a></li>
+                <li><a id="speisekarte" class="menu" title="Speisekarte" href="Speisekarte.html">SPEISEKARTE</a></li>
+                <li><a id="service" title="Service" href="Öffnungszeiten_Serviceoptionen_Zahlungsmethoden.html">SERVICE</a></li>
+                <li><a id="kontakt" title=Kontakt href="Kontakt.html">KONTAKT</a></li>
+                <li><a id="galerie" title=Galerie href="Galerie.html">GALERIE</a></li>
+                <li><a id="rezensionen" title=Rezensionen href="php/Kundenrezensionen.php">REZENSIONEN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img id="sushibox4" src="images/Sushi4.png" title="Sushi-Box" alt="Dieses Foto zeigt eine unserer Sushi-Boxen.">
+    <img id="sushibox5" src="images/Sushi5.png" title="Sushi-Box" alt="Dieses Foto zeigt eine unserer Sushi-Boxen.">
+
+    <div class="container">
+        <h1> SPEISEKARTE</h1>
+        <div class="speisekarte">
+            <ul id=row1>
+                <li>
+                    <img src="Images/Hoso_Maki.JPG" width="500" height="125"
+                         title="Hoso Maki (Dünne Rolle) |8 Stück.">
+                </li>
+                <li><b>1. Maki Lachs							                              <span class="price">3,90 €  </span>                      </b></li>
+                <li><b>2. Maki gekochte Lachs 				                                      <span class="price">3,90 €  </span>                       </b>   </li>
+                <li><b>3. Maki Tuna							                                  <span class="price">4,20 €  </span>                      </b></li>
+                <li><b>4. Maki gekochter Tuna						                              <span class="price">3,90 €  </span>                      </b></li>
+                <li><b>5. Maki Garnele							                                  <span class="price">4,20 €  </span>                         </b></li>
+                <li><b>6. Maki Avocado							                                  <span class="price">3,50 €  </span>                          </b></li>
+                <li><b>7. Maki Gurke							                                  <span class="price">3,00 €  </span>                      </b></li>
+                <li>
+                    <img src="Images/Futo_Maki.JPG" width="500" height="125"
+                         title="Futo Maki (Dicke Rolle) |8 Stück.">
+                </li>
+                <li><b>8. Futo Lachs Avocado (mit Frischkäse) 				                      <span class="price">7,50 €  </span>                          </b></li>
+                <li><b>9. Futo gekochter Tuna Avocado (mit Frischkäse)			                  <span class="price">8,00 €  </span>                      </b></li>
+                <li><b>10. Futo Chicken Avocado (mit Frischkäse)				                  <span class="price">7,50 €  </span>                      </b></li>
+                <li><b>11. Futo Veggie (Avocado, Gurke, Mango, Paprika, Frischkäse)	              <span class="price">7,50 €  </span>                          </b></li>
+                <li>
+                    <img src="Images/Tempura_Rolls.JPG" width="500" height="125"
+                         title="Hoso Maki (Dicke Rolle) |6 Stück.">
+                </li>
+                <li><b>12. Tempura Lachs Avocado (mit Frischkäse)			                      <span class="price">8,00 €  </span>                      </b></li>
+                <li><b>13. Tempura gekochter Tuna Avocado (mit Frischkäse)		                  <span class="price">8,50 €  </span>                      </b></li>
+                <li><b>14. Tempura Chicken Avocado (mit Frischkäse)			                      <span class="price">8,00 €  </span>                          </b></li>
+                <li><b>15. Tempura Garnele Avocado (mit Frischkäse)			                      <span class="price">8,50 €  </span>                          </b></li>
+                <li><b>16. Tempura Veggie (Avocado, Gurke, Mango, Paprika, Frischkase)	          <span class="price">7,50 €  </span></b>                      </li>
+                <li>
+                    <img src="Images/Ura_Maki.JPG" width="500" height="125"
+                         title="Hoso Maki (Inside-Out Rolle) |8 Stück.">
+                </li>
+                <li>
+                    <b>17. Alaska Salmon /-Rucola/-Röstzwiebeln 					              <span class="price">7,50 €  </span></b>
+                    <ul><li>Lachs, Avocado, Frischkase, Sesam mit Rucola oder Rostzwiebeln                </li></ul>
+                </li>
+                <li>
+                    <b>18. California Surimi /-Rucola/-Rostzwiebeln 			                  <span class="price">7,50 €  </span></b>
+                    <ul><li>Krebsfleischimitat, Avocado, Frischkäse, Sesam mit Rucola oder Röstzwiebeln  </li></ul>
+                </li>
+                <li>
+                    <b>19. Alaska Veggie 							                          <span class="price">7,00 €  </span></b>
+                    <ul><li> Avocado, Gurke, Sesam, Frischkäse                                             </li></ul>
+                </li>
+                <li>
+                    <b>20. Alaska Red 							                              <span class="price">7,90 €  </span></b>
+                    <ul><li>Lachs, Avocado, Frischkäse, Tobiko                                             </li></ul>
+                </li>
+                <li>
+                    <b>21. Avocado Rainbow 						                            <span class="price">7,90 €</span></b>
+                    <ul><li>Lachs, Gurke, Frischkäse, Avocado on top                                       </li></ul>
+                </li>
+                <li>
+                    <b>22. Feuer-Lachs Rainbow 						                          <span class="price">8,50 €  </span></b>
+                    <ul><li>Avocado, Gurke, Frischkäse, Feuer-Lachs on top                                 </li></ul>
+                </li>
+                <li>
+                    <b>23. Mango Rainbow 						                              <span class="price">7,90 €  </span></b>
+                    <ul><li>Lachs, Avocado, Frischkäse, Mango on top                                       </li></ul>
+                </li>
+                <li>
+                    <b>24. Tempura Ebi Avocado Rainbow					                      <span class="price">8,50 €  </span></b>
+                    <ul><li>Tempura Garnele, Frischkäse, Avocado on top                                    </li></ul>
+                </li>
+                <li>
+                    <b>25. Unagi Rainbow 							                          <span class="price">9,50 €  </span></b>
+                    <ul><li>Avocado, Gurke, Frischkäse, Süß Aal on top                                     </li></ul>
+                </li>
+                <li>
+                    <b>26. Alaska Cooked Salmon /-Rucola/-Röstzwiebeln 			              <span class="price">7,50 €  </span></b>
+                    <ul>
+                        <li>
+                            gekochter Lachs, Avocado, Frischkäse, Sesam mit Rucola <br />
+                            oder Röstzwiebeln
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>27. Alaska Cooked Tuna /-Rucola/-Röstzwiebeln 			              <span class="price">7,90 €  </span></b>
+                    <ul>
+                        <li>
+                            gekochter Thunfisch, Avocado, Frischkäse, Sesam mit Rucola <br />
+                            oder Röstzwiebeln
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>28. Alaska Chicken /-Rucola/-Röstzwiebeln				                  <span class="price">7,50 €  </span></b>
+                    <ul>
+                        <li>
+                            Hähnchen, Avocado, Frischkäse, Sesam mit Rucola <br />
+                            oder Röstzwiebeln
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="row2">
+                <li>
+                    <img src="Images/Sushi_Mix.JPG" width="500" height="125"
+                         title="Sushi Mix">
+                </li>
+                <li>
+                    <b>29. Sushi Go Mix 							                          <span class="price">8,90 €  </span></b>
+                    <ul><li>4 Maki Lachs, 4 Alaska Red, 1 Nigiri Lachs, 1 Nigiri Tuna                      </li></ul>
+                </li>
+                <li>
+                    <b>30. Veggie Mix 							                              <span class="price">7,90 €  </span></b>
+                    <ul><li>4 Alaska Veggie, 2 Maki Paprika, 2 Maki Gurke, 2 Nigiri Avocado                </li></ul>
+                </li>
+                <li>
+                    <b>31. Lachs 100 Mix							                              <span class="price">12,00 €  </span></b>
+                    <ul><li>4 Maki Lachs, 4 Alaska Lachs, 4 Futo Lachs, 2 Nigiri Feuer-Lachs               </li></ul>
+                </li>
+                <li>
+                    <b>32. Tuna 100 Mix 							                              <span class="price">12,90 €  </span></b>
+                    <ul>
+                        <li>
+                            4 Maki Tuna, 4 Alaska Tuna, 4 Futo cooked Tuna, <br />
+                            2 Nigiri Feuer Tuna
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>33. Crunchy Mix							                              <span class="price">11,50 €  </span></b>
+                    <ul>
+                        <li>
+                            3 Tempura Lachs Avocado, 4 Alaska Tempura Garnele, <br />
+                            4 Maki Gurke, 4 Maki Paprika
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>34. Lachs Tuna Ebi Mix						                          <span class="price">13,90 €  </span></b>
+                    <ul>
+                        <li>
+                            4 Maki Lachs, 4 Maki Tuna, 4 Alaska Lachs, 4 Alaska cooked <br />
+                            Tuna, 2 Nigiri Garnele
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>35. All in One Mix 							                          <span class="price">14,90 €  </span></b>
+                    <ul>
+                        <li>
+                            4 Alaska Red, 4 Avocado Rainbow, 1 Nigiri Ebi, 1 Nigiri Surimi <br />
+                            2 Maki Paprika, 2 Maki Gurke, 2 Maki Lachs, 2 Maki Tuna
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="Images/Sushi_Combo.JPG" width="500" height="125"
+                         title="Sushi Combo">
+                </li>
+                <li>
+                    <b>36. Sushi Go Combo (für 1-2 Personen) 				                  <span class="price">31,50 €  </span></b>
+                    <ul>
+                        <li>
+                            8 Maki Lachs, 8 Maki Tuna, 8 Alaska Red, 4 Maki Avocado, <br />
+                            4 Maki Gurke,3 Tempura Lachs Avocado,                        <br />
+                            2 Nigiri Feuer-Lachs, 2 Nigiri Feuer-Tuna, 2 Nigiri Ebi
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>37. Veggie Combo (für 1-2 Personen) 				                      <span class="price">29,90 €  </span></b>
+                    <ul>
+                        <li>
+                            8 Futo Veggie, 6 Tempura Veggie, 8 Alaska Veggie,        <br />
+                            4 Maki Avocado,
+                            4 Maki Gurke, 4 Maki Paprika, 2 Nigiri Avocado               <br />
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>38. Big Combo (für 2-3 Personen) 					                      <span class="price">39,90 €  </span></b>
+                    <ul>
+                        <li>
+                            8 Maki Lachs, 8 Maki Tuna, 8 Alaska Red, 8 Avocado Rainbow,<br />
+                            3 Tempura Lachs Avocado,4 Maki Avocado,                         <br />
+                            4 Maki Gurke, 2 Nigiri Ebi, 2 Nigiri Feuer-Unagi,<br />
+                            2 Nigiri Feuer Tuna
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>39. Max Combo (für 3-4 Personen)				                           <span class="price">59,90 €  </span></b>
+                    <ul>
+                        <li>
+                            8 Maki Lachs, 8 Maki Tuna, 8 Maki Avocado, 8 Maki Gurke, <br />
+                            8 Alaska Red,8 Avocado Rainbow, 6 Tempura Lachs Avocado,     <br />
+                            4 Futo Lachs Avocado, 2 Nigiri Feuer-Lachs,                  <br />
+                            2 Nigiri Feuer-Tuna, 2 Nigiri Feuer-Unagi,                   <br />
+                            2 Nigiri Ebi, 2 Nigiri Surimi,
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div id="footer1">
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24"><g fill='white'><path d="M15 17c-2 0-8-6-8-8 0-1 2-2 2-3S6 0 5 0 0 3 0 4c0 8 12 20 20 20 1 0 4-4 4-5s-5-4-6-4-2 2-3 2z"></path></g></svg><br>
+                <b>Kontakt:</b><br>
+                Tel.: 0656 1669 9779
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24"><g fill='white'><path d="M12 1C7.6 1 4 4.6 4 9s8 14 8 14 8-9.6 8-14-3.6-8-8-8zm0 12c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path></g></svg><br>
+                <b>Anschrift:</b><br>
+                Sushi Go<br>
+                Hauptstraße 31<br>
+                5634 Bitburg<br>
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24"><g fill='white'><path d="M12 3c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm6 11h-7c-.6 0-1-.4-1-1V8c0-.6.4-1 1-1s1 .4 1 1v4h6c.6 0 1 .4 1 1s-.4 1-1 1z"></path></g></svg><br>
+                <b>Öffnungszeiten:</b><br>
+                Mo-Do 11:00 - 15:00 / 17:00 - 21:00
+            </p>
+        </div>
+        <div id="footer2">
+            <p>
+                <a id="datenschutz" href="Datenschutzerklärung.html" tabindex="9">Datenschutz</a>
+            </p>
+            <p id="copyright">&#169; Sushi Go 2022</p>
+            <p>
+                <a id="impressum" href="Impressum.html" tabindex="10">Impressum</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

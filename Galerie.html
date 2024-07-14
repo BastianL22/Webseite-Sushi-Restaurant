@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildergalerie</title>
+    <link rel="stylesheet" href="Stylesheets/Stylesheet_Galerie.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet_Header_Footer.css">
+    <script defer src="javascript/Script_Back2TopBtn.js"></script>
+</head>
+
+<body id="galerie_seite">
+    <!--Back to Top Button-->
+    <button id="back2top" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24"><g fill='#FFFFFF'><path d="M5.5 12.7c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8 0 2.1 1.1 2.1zM5.5 20.7c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8 0 2.1 1.1 2.1z"></path></g></svg>
+    </button>
+
+    <header>
+        <a href="Gallery.html">
+            <img id="engl" src="Images/us_uk_flag.svg" width="90" height="40" title="Englisch-Button">
+        </a>
+        <div>
+            <a href="index.html">
+                <img id="logo" src="Images/Logo.png" width="160" height="160" title="Logo">
+            </a>
+        </div>
+        <nav>
+            <input type="checkbox" id="check" name="check">
+            <label for="check" id="checkbtn">&#9776;</label>
+            <ul>
+                <li><a id="home" title="Home" href="index.html">HOME</a></li>
+                <li><a id="speisekarte" title="Speisekarte" href="Speisekarte.html">SPEISEKARTE</a></li>
+                <li><a id="service" title="Service" href="Öffnungszeiten_Serviceoptionen_Zahlungsmethoden.html">SERVICE</a></li>
+                <li><a id="kontakt" title=Kontakt href="Kontakt.html">KONTAKT</a></li>
+                <li><a id="galerie" class="galerie_seite" title=Galerie href="Galerie.html">GALERIE</a></li>
+                <li><a id="rezensionen" title=Rezensionen href="php/Kundenrezensionen.php">REZENSIONEN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="container">
+        <h1>GALERIE</h1>
+        <div id="bildergalerie">
+            <img src="images2/Nigiri_Lachs.jpg" alt="6 Nigiri Lachs">
+            <img src="images2/Nigiri_Tuna.jpg" alt="6 Nigiri Thunfisch">
+            <img src="images2/Nigiri.jpg" alt="Nigiri Lachs und Thunfisch">
+            <img src="images2/Nr.1.jpg" alt="8 Stück Maki Lachs (Nr. 1)">
+            <img src="images2/Nr.4.jpg" alt="8 Stück Maki gekochter Tuna (Nr.4)">
+            <img src="images2/Nr.13.jpg" alt="8 Stück Tempura mit Frischkäse, Avocado, und gekochtem Thunfisch (Nr.13)">
+            <img src="images2/Nr.14.jpg" alt="8 Stück Tempura mit Frischkäse, Avocado, und Chicken (Nr.14)">
+            <img src="images2/Nr.16.jpg" alt="8 Stück Tempura mit Frischkäse, Avocado, Gurke, Paprika und Mango (Nr.16)">
+            <img src="images2/Nr.17.jpg" alt="8 Stück Inside-Out mit Lachs und Avocado (Nr.17)">
+            <img src="images2/Nr.21.jpg" alt="8 Stück Avocado on top Inside-Out mit Lachs und Gurke (Nr.21)">
+            <img src="images2/Nr.22.jpg" alt="8 Stück Inside-Out mit flambiertem Lachs on top (Nr.22)">
+            <img src="images2/Nr.33.jpg" alt="Crunchy Mix: 8 Stück Gurken- und Paprika Maki, 4 Stück Inside-Out mit Tempura Garnele, 4 Stück Tempura Lachs Avocado (Nr. 33)">
+            <img src="images2/Nr.37(3).jpg" alt="Veggie Combo für 1-2 Personen (Nr.37)">
+            <img src="images2/Nr.38.jpg" alt="Nahaufnahme von Big Combo für 2-3 Personen (Nr.38)">
+            <img src="images2/Nr.36.jpg" alt="Sushi Go Combo für 1-2 Personen (Nr.36)">
+            <img src="images2/Nr.37(2).jpg" alt="Veggie Combo für 1-2 Personen (Nr.37)">
+            <img src="images2/Nr.37.jpg" alt="Veggie Combo für 1-2 Personen (Nr.37)">
+            <img src="images2/Sushi_Platte.jpg" alt="Sushi Platte für 2-3 Personen">
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer1">
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24">
+                    <g fill='white'>
+                        <path d="M15 17c-2 0-8-6-8-8 0-1 2-2 2-3S6 0 5 0 0 3 0 4c0 8 12 20 20 20 1 0 4-4 4-5s-5-4-6-4-2 2-3 2z">
+                        </path>
+                    </g>
+                </svg><br>
+                <b>Kontakt:</b><br> Tel.: 0656 1669 9779
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24">
+                    <g fill='white'>
+                        <path d="M12 1C7.6 1 4 4.6 4 9s8 14 8 14 8-9.6 8-14-3.6-8-8-8zm0 12c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z">
+                        </path>
+                    </g>
+                </svg><br>
+                <b>Anschrift:</b><br> Sushi Go<br> Hauptstraße 31<br> 5634 Bitburg<br>
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24">
+                    <g fill='white'>
+                        <path d="M12 3c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm6 11h-7c-.6 0-1-.4-1-1V8c0-.6.4-1 1-1s1 .4 1 1v4h6c.6 0 1 .4 1 1s-.4 1-1 1z">
+                        </path>
+                    </g>
+                </svg><br>
+                <b>Öffnungszeiten:</b><br> Mo-Do 11:00 - 15:00 / 17:00 - 21:00
+            </p>
+        </div>
+        <div id="footer2">
+            <p>
+                <a id="datenschutz" href="Datenschutzerklärung.html" tabindex="9">Datenschutz</a>
+            </p>
+            <p id="copyright">&#169; Sushi Go 2022</p>
+            <p>
+                <a id="impressum" href="Impressum.html" tabindex="10">Impressum</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

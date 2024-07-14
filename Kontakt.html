@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/StyleSheet_Kontaktseite.css">
+    <link rel="stylesheet" type="text/css" href="Stylesheets/StyleSheet_Header_Footer.css">
+    <script defer src="javascript/Script_Back2TopBtn.js"></script>
+    <script defer src="javascript/Script_Formular.js"></script>
+
+</head>
+<body id="kontaktseite">
+    <!--Back to Top Button-->
+    <button id="back2top" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24"><g fill='#FFFFFF'><path d="M5.5 12.7c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8 0 2.1 1.1 2.1zM5.5 20.7c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8 0 2.1 1.1 2.1z"></path></g></svg>
+    </button>
+
+    <header>
+        <a href="Contact.html" tabindex="1">
+            <img id="engl" src="Images/us_uk_flag.svg" width="96" height="46" title="Englisch-Button">
+        </a>
+        <div>
+            <a href="index.html" tabindex="2">
+                <img id="logo" src="Images/Logo.png" width="160" height="160" title="Logo">
+            </a>
+        </div>
+
+        <nav>
+            <input type="checkbox" id="check" name="check">
+            <label for="check" id="checkbtn">&#9776;</label>
+            <ul>
+                <li><a id="home" title="Home" href="index.html" tabindex="3">HOME</a></li>
+                <li><a id="speisekarte" title="Speisekarte" href="Speisekarte.html" tabindex="4">SPEISEKARTE</a></li>
+                <li><a id="service" title="Service" href="Öffnungszeiten_Serviceoptionen_Zahlungsmethoden.html" tabindex="5">SERVICE</a></li>
+                <li><a id="kontakt" class="kontaktseite" title=Kontakt href="Kontakt.html" tabindex="6">KONTAKT</a></li>
+                <li><a id="galerie" title=Galerie href="Galerie.html" tabindex="7">GALERIE</a></li>
+                <li><a id="rezensionen" class="Kundenrezensionen" title=Rezensionen href="php/Kundenrezensionen.php" tabindex="8">REZENSIONEN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img id="sushibox4" src="Images/Sushi4.png" title="Sushi-Box" alt="Dieses Foto zeigt eine unserer Sushi-Boxen.">
+    <img id="sushibox5" src="Images/Sushi5.png" title="Sushi-Box" alt="Dieses Foto zeigt eine unserer Sushi-Boxen.">
+
+    <section id="container1">
+        <h1>KONTAKT</h1>
+        <div id="location">
+            <div id="adresse_anfahrt">
+                <div>
+                    <h2>Adresse:</h2>
+                    <p id="adresse">
+                        <strong>Sushi Go</strong><br>
+                        Hauptstraße 31<br>
+                        54634 Bitburg<br>
+                        Tel.: +49 6561 6699 779
+                    </p>
+                </div>
+                <div>
+                    <h2>Anfahrt:</h2>
+                    <p id="anfahrt">
+                        <i>Sushi Go Bitburg</i> liegt unmittelbar im Zentrum der Stadt Bitburg. Sie erreichen uns schnell und unkompliziert mit allen öffentlichen Verkehrsmitteln, mit Ihrem Pkw oder zu Fuß. Wir freuen uns darauf, Sie schon bald bei uns begrüßen zu dürfen!
+                    </p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1hfCT9lwLkDi3V6PZPfomoIPE9UGofR1z"></iframe>
+        </div>
+    </section>
+
+    <!--<aside>
+        <a href="https://www.facebook.com/SushiGoBitburg/">
+            <img id="fc_icon" src="images/facebook_icon2.png" width="68" height="68" alt="Facebook-Icon" title="Sushi Go Bitburg auf Facebook">
+        </a>
+        <p>
+            Folgen Sie uns auch auf Facebook!
+        </p>
+    </aside>-->
+
+    <section id="container2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24"><g fill='white'><path d="M1 5v14l7-7-7-7zm22 14V5l-7 7 7 7zm-11-3l-3.5-3.5L1 20h22l-7.5-7.5L12 16zM1 4l11 11L23 4H1z"></path></g></svg>
+        <p>
+            Haben Sie Fragen oder Anregungen?<br>
+            Hinterlassen Sie uns einfach eine Nachricht!
+        </p>
+
+        <form action="php/Formular-Validierung.php" method="post" id="kontaktformular">
+            <h3>Kontaktformular</h3>
+            <fieldset>
+                <div id="checkboxen">
+                    <input type="radio" id="weiblich" name="geschlecht" value="Frau" tabindex="9">
+                    <label for="weiblich">Frau</label>
+
+                    <input type="radio" id="maennlich" name="geschlecht" value="Herr" tabindex="10">
+                    <label for="maennlich">Herr</label>
+                </div>
+
+                <div id="feld1">
+                    <label for="vorname">Vorname *</label>
+                    <input type="text" id="vorname" name="vorname" placeholder="Max" maxlength="25" tabindex="11">
+                </div>
+
+                <div id="feld2">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" name="nachname" placeholder="Mustermann" maxlength="25" tabindex="12">
+                </div>
+
+                <div id="feld3">
+                    <label for="email">E-Mail *</label>
+                    <input type="text" id="email" name="email" placeholder="max@mustermann.com" tabindex="13">
+                </div>
+
+                <div id="feld4">
+                    <label for="nachricht">Nachricht *</label>
+                    <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihr Text ... " maxlength="600" tabindex="14"></textarea>
+                </div>
+            </fieldset>
+            <div id="error"></div>
+            <div id="buttons">
+                <button id="submit-btn" type="submit" name="senden" value="Senden" tabindex="15">ABSENDEN</button>
+                <button id="reset-btn" type="reset" name="abbrechen" value="Abbrechen" tabindex="16" onclick="return confirm('Moechten Sie wirklich alle Formulardaten loeschen?')">ABBRECHEN</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div id="footer1">
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24"><g fill='white'><path d="M15 17c-2 0-8-6-8-8 0-1 2-2 2-3S6 0 5 0 0 3 0 4c0 8 12 20 20 20 1 0 4-4 4-5s-5-4-6-4-2 2-3 2z"></path></g></svg><br>
+                <b>Kontakt:</b><br>
+                Tel.: 0656 1669 9779
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24"><g fill='white'><path d="M12 1C7.6 1 4 4.6 4 9s8 14 8 14 8-9.6 8-14-3.6-8-8-8zm0 12c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path></g></svg><br>
+                <b>Anschrift:</b><br>
+                Sushi Go<br>
+                Hauptstraße 31<br>
+                5634 Bitburg<br>
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24"><g fill='white'><path d="M12 3c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm6 11h-7c-.6 0-1-.4-1-1V8c0-.6.4-1 1-1s1 .4 1 1v4h6c.6 0 1 .4 1 1s-.4 1-1 1z"></path></g></svg><br>
+                <b>Öffnungszeiten:</b><br>
+                Mo-Do 11:00 - 15:00 / 17:00 - 21:00
+            </p>
+        </div>
+        <div id="footer2">
+            <p>
+                <a id="datenschutz" href="Datenschutzerklärung.html" tabindex="17">Datenschutz</a>
+            </p>
+            <p id="copyright">&#169; Sushi Go 2022</p>
+            <p>
+                <a id="impressum" href="Impressum.html" tabindex="18">Impressum</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<!--<a href="https://www.facebook.com/SushiGoBitburg/">
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM26.5016 38.1115V25.0542H30.1059L30.5836 20.5546H26.5016L26.5077 18.3025C26.5077 17.1289 26.6192 16.5001 28.3048 16.5001H30.5581V12H26.9532C22.6231 12 21.0991 14.1828 21.0991 17.8536V20.5551H18.4V25.0547H21.0991V38.1115H26.5016Z" fill="#ff4d4d" />
+    </svg>
+</a>-->
